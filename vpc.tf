@@ -1,5 +1,7 @@
 module "vpc_test" {
-    source = "hashicorp/google"
+  source  = "app.terraform.io/srimd-training/network/google"
+  version = "3.2.2"
+  # insert required variables here
     project_id   = var.project
     network_name = "stillnw-network"
 
