@@ -1,4 +1,5 @@
 module "vpc_test" {
+    source = "hashicorp/google"
     project_id   = var.project
     network_name = "stillnw-network"
 
