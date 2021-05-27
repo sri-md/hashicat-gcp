@@ -1,10 +1,6 @@
 module "vpc_test" {
-    source  = "terraform-google-modules/network/google"
-    version = "~> 3.0"
-
     project_id   = var.project
-    network_name = "notworking-network"
-    routing_mode = "GLOBAL"
+    network_name = "stillnw-network"
 
     subnets = [
   {
